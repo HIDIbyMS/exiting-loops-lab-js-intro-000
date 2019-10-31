@@ -20,20 +20,23 @@ function breakOut(array, changeValue, stopValue){
 function keepGoing(array, changeValue, skipValue){
   // iterate through array
   for (var i = 0; array.length; i++)
-  
-  
-  
-  
-  {
-// changes every element to changeValue except those that match skipValue
-    if (array[i] !== skipValue){
-      array.splice(i, 1, changeValue);
-      return array[i];
-    } else {
-       // returns array
-    return array; 
-    }
+  if (i !== stopValue){
+    array[i] = changeValue;
+    continue;
   }
+  
+  
+  
+//   {
+// // changes every element to changeValue except those that match skipValue
+//     if (array[i] !== skipValue){
+//       array.splice(i, 1, changeValue);
+//       return array[i];
+//     } else {
+//       // returns array
+//     return array; 
+//     }
+//   }
 }
 
 
