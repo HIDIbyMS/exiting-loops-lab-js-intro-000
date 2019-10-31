@@ -35,13 +35,11 @@ function keepGoing(array, changeValue, skipValue){
 // define function 
 function findBy(array, findFn){
   // looks for value in array numberical - based on return of value of findFn
-  for (var i = 0; i < array.length; i++){
-    if (array[i] === findFn){
-      return array[i];
-    } else {
+  array.forEach(element =>{
+    if (element !== findFn) {
       return null;
     }
-  }
+  });
 }
 
 
