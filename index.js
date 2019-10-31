@@ -27,9 +27,7 @@ function keepGoing(array, changeValue, skipValue){
        // returns array
     return array; 
     }
-    
   }
-     
 }
 
 
