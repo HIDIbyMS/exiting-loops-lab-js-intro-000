@@ -21,7 +21,7 @@ function keepGoing(array, changeValue, skipValue){
   // iterate through array
   for (var i = 0; array.length; i++){
 // changes every element to changeValue except those that match skipValue
-    if (array[i] !== skipValue){
+    if (array[i] === skipValue){
       continue;
     } 
       array[i] = changeValue;
