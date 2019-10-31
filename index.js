@@ -43,8 +43,6 @@ function findBy(array, findFn){
       return null;
     }
   }
-  // return null if value isnt found
-  // check test file for signature of findFn and type of its return value
 }
 
 
