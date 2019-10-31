@@ -43,17 +43,24 @@ function keepGoing(array, changeValue, skipValue){
 
 
 // define function 
-function findBy(array, findFn)
-
-
-{
-  // looks for value in array numberical - based on return of value of findFn
-  array.forEach(element =>{
-    if (element !== findFn) {
-      return null;
+function findBy(array, findFn){
+  for (var i = 0; i < array.length; i++){
+    if(findFn(array[i])){
+      return array[i];
     }
-  });
+  }
+  return null;
 }
+
+
+// {
+//   // looks for value in array numberical - based on return of value of findFn
+//   array.forEach(element =>{
+//     if (element !== findFn) {
+//       return null;
+//     }
+//   });
+// }
 
 
 
