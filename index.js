@@ -24,7 +24,7 @@ function keepGoing(array, changeValue, skipValue){
   if (array[i] === skipValue){
     continue;
    } else {
-    // chenges every element to changeValue
+    // changes every element to changeValue
      array[i] = changeValue;
    }
 }
