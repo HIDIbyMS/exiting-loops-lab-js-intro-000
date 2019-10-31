@@ -35,7 +35,9 @@ function keepGoing(array, changeValue, skipValue){
 
 // define function 
 function findBy(array, findFn){
+  // iterate through array
   for (var i = 0; i < array.length; i++){
+    
     if(findFn(array[i])){
       return array[i];
     }
