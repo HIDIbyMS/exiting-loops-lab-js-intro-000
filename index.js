@@ -18,13 +18,13 @@ function breakOut(array, changeValue, stopValue){
 
 // define function 
 function keepGoing(array, changeValue, skipValue){
-  // iterate through array
+// iterate through array
   for (var i = 0; i < array.length; i++){
-    // skips those that match skipValue
+// skips those that match skipValue
   if (array[i] === skipValue){
     continue;
    } else {
-    // changes every element to changeValue
+// changes every element to changeValue
      array[i] = changeValue;
    }
 }
@@ -35,14 +35,14 @@ function keepGoing(array, changeValue, skipValue){
 
 // define function 
 function findBy(array, findFn){
-  // iterate through array
+// iterate through array
   for (var i = 0; i < array.length; i++){
-    // looks for value in array based on the value of findFn
+// looks for value in array based on the value of findFn
     if(findFn(array[i])){
       return array[i];
     }
   }
-  // return null when value isnt found
+// return null when value isnt found
   return null;
 }
 
