@@ -37,11 +37,12 @@ function keepGoing(array, changeValue, skipValue){
 function findBy(array, findFn){
   // iterate through array
   for (var i = 0; i < array.length; i++){
-    
+    // looks for value in array based on the value of findFn
     if(findFn(array[i])){
       return array[i];
     }
   }
+  // return null when value isnt found
   return null;
 }
 
