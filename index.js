@@ -20,27 +20,18 @@ function breakOut(array, changeValue, stopValue){
 function keepGoing(array, changeValue, skipValue){
   // iterate through array
   for (var i = 0; i < array.length; i++){
+    // skips those that match skipValue
   if (array[i] === skipValue){
     continue;
    } else {
+    // chenges every element to changeValue
      array[i] = changeValue;
    }
 }
+// returns array
   return array;
 }  
   
-//   {
-// // changes every element to changeValue except those that match skipValue
-//     if (array[i] !== skipValue){
-//       array.splice(i, 1, changeValue);
-//       return array[i];
-//     } else {
-//       // returns array
-//     return array; 
-//     }
-//   }
-
-
 
 // define function 
 function findBy(array, findFn){
@@ -53,14 +44,6 @@ function findBy(array, findFn){
 }
 
 
-// {
-//   // looks for value in array numberical - based on return of value of findFn
-//   array.forEach(element =>{
-//     if (element !== findFn) {
-//       return null;
-//     }
-//   });
-// }
 
 
 
