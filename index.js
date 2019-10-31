@@ -19,13 +19,15 @@ function breakOut(array, changeValue, stopValue){
 // define function 
 function keepGoing(array, changeValue, skipValue){
   // iterate through array
-  for (var i = 0; array.length; i++)
-  if (array[i] !== skipValue){
-    array[i] = changeValue;
+  for (var i = 0; i < array.length; i++){
+  if (array[i] === skipValue){
     continue;
-  }
-  
-  
+   } else {
+     array[i] = changeValue;
+   }
+}
+  return array;
+}  
   
 //   {
 // // changes every element to changeValue except those that match skipValue
@@ -37,7 +39,7 @@ function keepGoing(array, changeValue, skipValue){
 //     return array; 
 //     }
 //   }
-}
+
 
 
 // define function 
