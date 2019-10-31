@@ -20,7 +20,7 @@ function breakOut(array, changeValue, stopValue){
 function keepGoing(array, changeValue, skipValue){
   // iterate through array
   for (var i = 0; array.length; i++)
-  if (i !== stopValue){
+  if (array[i] !== stopValue){
     array[i] = changeValue;
     continue;
   }
